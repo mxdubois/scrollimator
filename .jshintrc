@@ -1,0 +1,17 @@
+{
+  "browser": true,
+  "jquery": true,
+  "node": true,
+
+  "camelcase": true,
+  "eqeqeq": true,
+  "indent": 2,
+  "latedef": "nofunc",
+  "maxlen": 80,
+  "newcap": true,
+  "quotmark": false,
+  "strict": true,
+  "undef": true,
+  "unused": "vars",
+  "eqnull": true
+}

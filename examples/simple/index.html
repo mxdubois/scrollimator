@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>A Simple Scrollimator Demo</title>
+
+<link href='http://fonts.googleapis.com/css?family=Kreon|Open+Sans|Indie+Flower' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="./style.css" />
+
+<!-- Polyfills -->
+<script src="//cdn.polyfill.io/v1/polyfill.js?features=requestAnimationFrame,getComputedStyle|gated"></script>
+<!-- Polyfill for addEventListener, removeEventListener, and DOMContentLoaded -->
+<script src="//rawgit.com/jonathantneal/EventListener/master/EventListener.js"></script>
+
+<script type="text/javascript" src="../../dist/Scrollimator.js"></script>
+<script type="text/javascript" src="./Model.js"></script>
+<script type="text/javascript" src="./TargetView.js"></script>
+<script type="text/javascript" src="./InfoView.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+
+</head>
+
+<body>
+  <div id="sidebar">
+    <div class="info-view"></div>
+    <div class="info-view"></div>
+    <div class="info-view"></div>
+  </div>
+  <div id="scrollimator">
+    <div id="intro" class="section matching">
+      <div class="banner">
+        <h1 class="title">A Simple Scrollimator Demo</h1>
+        <p class="subtitle">Scroll on!</p>
+      </div>
+    </div>
+    <div id="container" class="section">
+      <div class="target-view smaller" data-target-view-name="smaller"></div>
+      <div class="target-view matching" data-target-view-name="same size"></div>
+      <div class="target-view larger" data-target-view-name="larger"></div>
+    </div>
+    <div id="outro" class="section matching">
+      <div class="banner">
+        <h2 class="outro-text">Check out <a href="//github.com/mxdubois/scrollgears/examples/simple">the code</a></h2>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

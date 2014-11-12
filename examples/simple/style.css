@@ -1,0 +1,206 @@
+body, html {
+  margin:0;
+  padding:0;
+  font-family: "Open Sans", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Kreon";
+  font-weight:normal;
+}
+.title, .outro-text {
+  font-family: "Indie Flower";
+  font-size: 4em;
+  margin-top:0;
+  margin-bottom: .5em;
+  font-weight:normal;
+}
+.outro-text {
+  font-size: 2em;
+}
+.subtitle {
+  font-size: 2em;
+  margin-top:0;
+  margin-bottom:0;
+  font-family: "Kreon";
+  color: rgba(255,255,255,.7);
+}
+#sidebar {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  width: 400px;
+  overflow:auto;
+}
+#scrollimator {
+  position:absolute;
+  top:0;
+  left:0;
+  right:400px;
+  bottom:0;
+  overflow:auto;
+}
+.section {
+  position:relative;
+}
+#intro, #outro {
+  background: #444;
+  background:
+    linear-gradient(-14deg, rgba(216, 75, 46, 1), rgba(32,60,117,1) 90%, rgba(32,60,117,1));
+  transform: translateZ(0); /* hack: smoother gradient rendering in Chrome */
+  color:white;
+}
+#outro .banner, #intro .banner {
+  position:absolute;
+  top:40%;
+  margin-top:-2em;
+  left:0;
+  right:0;
+  text-align:center;
+}
+#outro .banner {
+  top: 50%;
+}
+#outro a:link, #outro a:visited {
+  color:white;
+}
+#container {
+  padding-top: 500px;
+  background:#eee;
+  background: url(http://subtlepatterns.com/patterns/brushed.png);
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+
+.label {
+  background: #aaa;
+  color:white;
+  border-radius: 50%;
+  padding: 1em;
+  font-size:1em;
+  line-height:1em;
+  text-align:center;
+  z-index:100;
+  font-family: "Kreon";
+}
+.info-view.visible .label,
+.target-view.visible .label {
+  /*background: #6489d5;*/
+  background: #444;
+}
+.info-view.behind .label,
+.target-view.behind .label {
+}
+
+
+.info-view {
+  border-bottom: 1px solid #ddd;
+  padding:30px;
+  background: #f4f4f4;
+}
+.info-view.visible {
+  background:white;
+}
+.info-view .label {
+  float:left;
+  margin-right: 1em;
+}
+.info-view .property-list {
+  margin:0;
+  padding:0;
+  list-style: none;
+  overflow:hidden;
+}
+.info-view .name {
+  display:block;
+  font-size: 1.5em;
+  /* baseline-align with label */
+  line-height:.666666em;
+  padding:.666666em 0;
+  margin-bottom: .5em;
+  color: #444;
+  font-family: "Kreon", serif;
+}
+.info-view .property-key,
+.info-view .property-value {
+  display:block;
+  float:left;
+}
+.info-view .property-key {
+  width: 75%;
+  text-align:right;
+  color: #999;
+}
+.info-view .property-key:after {
+  content: ":";
+  margin-right:.5em;
+}
+.info-view .property-value {
+  width: 25%;
+  text-align:right;
+}
+
+
+.target-view {
+  position:relative;
+  border-radius: 3px;
+  box-shadow: rgba(0,0,0,.2) 0 2px 10px inset;
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom:500px;
+  background:#d4d4d4;
+  background: url(http://subtlepatterns.com/patterns/light_toast.png);
+  border: 10px solid #aaa;
+}
+.target-view .label {
+  position: absolute;
+  top:0;
+  left:0;
+  margin-left:-1.65em;
+  margin-top:-1.65em;
+  box-shadow: rgba(0,0,0,.3) 0 2px 2px;
+  border:.3em solid white;
+}
+.target-view .progress-bar-container, .target-view .progress-bar {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+}
+.target-view .progress-bar-container {
+  overflow:hidden;
+  right:0;
+}
+.target-view .vertical-visible-progress:after,
+.target-view .vertical-contained-progress:after {
+  position: absolute;
+  right:0;
+  border-top-left-radius: .3em;
+  border-bottom-left-radius:.3em;
+  background:rgba(255,255,255,.7);
+  padding-right:.5em;
+  padding-left:.5em;
+  line-height:1.5;
+  box-shadow: rgba(0,0,0,.1) -2px 2px 5px;
+}
+.target-view .vertical-visible-progress {
+  background: rgba(0,40, 190, .5);
+  box-shadow: rgba(157,204,255,.6) -70px 0 55px -55px inset;
+  border-right:2px solid rgba(255,255,255,.9);
+}
+.target-view .vertical-visible-progress:after
+{
+  content: "verticalVisibleProgress";
+  top:1em;
+  color:rgba(70,100,255,.6);
+}
+.target-view .vertical-contained-progress {
+  background: rgba(190,40, 0, .5);
+  box-shadow: rgba(255,100,70,.6) -70px 0 55px -55px inset;
+  border-right:2px solid rgba(255,255,255,.9);
+}
+.target-view .vertical-contained-progress:after {
+  content: "verticalContainedProgress";
+  top:3.5em; /* 2*1 + 1.5*/
+  color:#945364;
+}

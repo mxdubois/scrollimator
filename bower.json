@@ -1,0 +1,27 @@
+{
+  "name": "scrollanism",
+  "version": "0.0.0",
+  "authors": [
+    "Michael DuBois <michael@michaeldubois.me>"
+  ],
+  "description": "Power animations with the scroll position.",
+  "main": "index.js",
+  "keywords": [
+    "scrolling",
+    "animation",
+    "scrollspy",
+    "waypoints"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/mxdubois/scrollanism",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "position": "darsain/position#~0.1.0"
+  }
+}
