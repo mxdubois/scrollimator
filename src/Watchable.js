@@ -12,7 +12,8 @@ var uid = require("uid"),
 var constants = require("./constants");
 
 /**
- * Create a new target instance.
+ * A watchable collection of properties, similar to Backbone.Model.
+ * TODO could probably be replaced with a third-party event emitter.
  */
 function Watchable() {
   this._id = uid(constants.UID_LENGTH);
