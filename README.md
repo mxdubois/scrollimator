@@ -34,18 +34,18 @@ user scrolls.
  * Progress from partially entered to fully exited.
 * **verticalContainedProgress** | **horizontalContainedProgress**
  * Progress from fully entered to partially exited.
- * [-Infinity, Infinity] if element is smaller than Scrollimator
- * -Infinity|1|Infinity if element is same size as Scrollimator.
- * `NaN` if element is larger than Scrollimator (cannot be contained) 
+   * [-Infinity, Infinity] if element is smaller than Scrollimator
+   * -Infinity|1|Infinity if element is same size as Scrollimator.
+   * `NaN` if element is larger than Scrollimator (cannot be contained) 
 * **verticalState** | **horizontalState**
  * String representing state of element relative to Scrollimator
- * `"ahead"` - below/right of Scrollimator
- * `"entering"` - straddling bottom/right edge of Scrollimator
- * `"contained"` - smaller than Scrollimator and fully inside
- * `"matching"` - same size as Scrollimator and edges aligned 
- * `"spanning"` - larger than Scrollimator and spanning it 
- * `"exiting"` - straddling top/left edge of Scrollimator
- * `"behind"` - above/left of Scrollimator
+   * `"ahead"` - below/right of Scrollimator
+   * `"entering"` - straddling bottom/right edge of Scrollimator
+   * `"contained"` - smaller than Scrollimator and fully inside
+   * `"matching"` - same size as Scrollimator and edges aligned 
+   * `"spanning"` - larger than Scrollimator and spanning it 
+   * `"exiting"` - straddling top/left edge of Scrollimator
+   * `"behind"` - above/left of Scrollimator
 
 ## Installing
 
