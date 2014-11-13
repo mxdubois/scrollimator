@@ -6,8 +6,8 @@ _This library is in beta so the api may change. Feedback is welcome._
 _Note: IE8 has not yet been tested_
 
 ## What does it do?
-A `Scrollimator` instance provides callbacks to watch the 
-position and traversal progress of an element within a container element.
+A `Scrollimator` instance provides callbacks to watch the position 
+and scroll/traversal progress of child elements relative to the `Scrollimator` node.
 The progress values returned can be used to tween animations as the
 user scrolls.
 
