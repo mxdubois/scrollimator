@@ -49,9 +49,7 @@ user scrolls -- thus, the name Scrollimator.
 
 ## Installing
 
-```
-$ npm install --save scrollimator 
-```
+_Not yet available on npm. Coming soon!_
 
 ## Basic Usage
 
@@ -226,7 +224,7 @@ var velocityStrategy = (function(){
     if(typeof lastCalledMs !== "undefined") {
       var deltaMs = nowMs - lastCalledMs;
       props.horizontalVelocity = props.top - lastTop / deltaMs;
-      props.verticalVelocity = props.left lastLeft / deltaMs;
+      props.verticalVelocity = props.left - lastLeft / deltaMs;
     } else {
       props.verticalVelocity = 0;
       props.horizontalVelocity = 0;
