@@ -9,7 +9,7 @@ _Note: IE8 has not yet been tested_
 A `Scrollimator` instance provides callbacks to watch the 
 position and traversal progress of an element within a container element.
 The progress values returned can be used to tween animations as the
-user scrolls -- thus, the name Scrollimator.
+user scrolls.
 
 ### [A Simple Demo](//rawgit.com/mxdubois/scrollimator/master/examples/simple/index.html)
 
