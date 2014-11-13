@@ -55,7 +55,7 @@ _Not yet available on npm. Coming soon!_
 
 **Constructing:**
 ```javascript
-var Scrollimator = require("scrollimator");
+var Scrollimator = require("Scrollimator");
 
 // see src/Scrollimator.js for all available options.
 var options = {};
