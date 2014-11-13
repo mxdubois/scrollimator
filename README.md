@@ -11,7 +11,7 @@ and scroll/traversal progress of child elements relative to the `Scrollimator` n
 The progress values returned can be used to tween animations as the
 user scrolls.
 
-### [A Simple Demo](//htmlpreview.github.io/?https://raw.githubusercontent.com/mxdubois/scrollimator/master/examples/simple/index.html)
+### [A Simple Demo](http://htmlpreview.github.io/?https://raw.githubusercontent.com/mxdubois/scrollimator/master/examples/simple/index.html)
 
 ## Features
 
