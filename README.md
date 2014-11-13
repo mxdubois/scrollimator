@@ -11,7 +11,7 @@ position and traversal progress of an element within a container element.
 The progress values returned can be used to tween animations as the
 user scrolls -- thus, the name Scrollimator.
 
-### [A Simple Demo](htmlpreview.github.com/mxdubois/scrollimator/examples/simple/index.html)
+### [A Simple Demo](//rawgit.com/mxdubois/scrollimator/master/examples/simple/index.html)
 
 ## Features
 
