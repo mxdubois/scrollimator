@@ -61,8 +61,13 @@ h1, h2, h3, h4, h5, h6 {
 #outro .banner {
   top: 50%;
 }
-#outro a:link, #outro a:visited {
-  color:white;
+#outro a:link, #outro a:visited {  
+   /* Kinda hacky */
+  color: #704357;
+  background: rgba(255,255,255,.8);
+  text-decoration: none;
+  padding: 0 .5em;
+  border-radius: 2px;
 }
 #container {
   padding-top: 500px;
