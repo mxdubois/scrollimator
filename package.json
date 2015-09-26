@@ -1,5 +1,5 @@
 {
-  "name": "Scrollimator",
+  "name": "scrollimator",
   "version": "0.0.0",
   "description": "Power animations with scroll progress.",
   "main": "dist/Scrollimator.min.js",
